@@ -7,8 +7,10 @@ from tkinter import ttk
 from PIL import ImageTk,Image
 
 root = Tk()
-root.iconbitmap('pics/my_nick_name.ico')
-
+try:
+	root.iconbitmap('pics/my_nick_name.ico')
+except Exception as e:
+Pass
 my_img1 = ImageTk.PhotoImage(Image.open("pics/Alyssa_1.jpg"))
 my_img2 = ImageTk.PhotoImage(Image.open("pics/Alyssa_2.jpg"))
 my_img3 = ImageTk.PhotoImage(Image.open("pics/Alyssa_3.jpg"))
